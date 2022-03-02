@@ -1003,4 +1003,37 @@ const products = [
 
 //sort some every 
 
-console.log(findProduct);
+// console.log(findProduct);
+
+
+// let maxPrice = 0;
+// let maxProduct;
+// //en pahalı ürünü getir
+// products.forEach(product => {
+//     if (product.unitPrice > maxPrice) {
+//         maxPrice = product.unitPrice
+//         maxProduct = product
+//     }
+// });
+
+//method chaining
+// const result = products.sort((a, b) => b.unitPrice - a.unitPrice).map(q => q.unitPrice)
+
+// console.log(maxPrice, maxProduct);
+
+//category isimlerini yazdır
+
+// products.forEach(product => {
+//     // if (product.category != undefined && product.category != null) {
+//     //     console.log(product.category.name);
+//     // }
+//     // if (product.category) {
+//     //     console.log(product.category.name);
+//     // }
+
+//     // product.category ? console.log(product.category.name) : ''
+
+//     console.log(product?.category?.name)
+// });
+
+// console.log(result)
