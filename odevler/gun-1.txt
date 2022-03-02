@@ -1,0 +1,9 @@
+1) js foreach ile map arasındaki fark nedir?
+2) Array methodları araştırılacak, okuma yapılacak (find, filter, include, every, some, sort). (links.txt dosyasında paylaşıldı.)
+3) Js Loop ve array methodları (for, for...of, forEach, map, while ) okuma yapılacak. (links.txt dosyasında paylaşıldı.)
+
+4)https://northwind.vercel.app/api/products bu apiyi incele.
+*ID si 5 olan ürünü bana ver ? 
+*ürün fiyatı 30 dan büyük ve categoryIdsi 2 olmayan KAÇ ADET ürünüm var ?
+*Stokta bulunmayan kaç adet ürünüm var ( unitsInStock ) ? 
+- bu sorular hem array methodları kullanılarak hem de kullanılmadan yapılacak
