@@ -7,3 +7,5 @@
 *ürün fiyatı 30 dan büyük ve categoryIdsi 2 olmayan KAÇ ADET ürünüm var ?
 *Stokta bulunmayan kaç adet ürünüm var ( unitsInStock ) ? 
 - bu sorular hem array methodları kullanılarak hem de kullanılmadan yapılacak
+
+5)Github accountu açılacak.
