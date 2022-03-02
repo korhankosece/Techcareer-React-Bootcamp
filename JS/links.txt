@@ -16,3 +16,9 @@ https://www.youtube.com/watch?v=R8rmfD9Y5-c
 
 --Önemli Array Methodlar ve mutation durumları,
 https://doesitmutate.xyz
+
+--Moment.js (js date kütüphanesi)
+https://momentjs.com/
+
+--northwind link
+https://northwind.vercel.app/
