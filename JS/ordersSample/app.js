@@ -29580,7 +29580,7 @@ let totalPrice = 0;
 
 //         const result = customerTotalPrice.length > 0 ? customerTotalPrice.some(q => q.id === order.customerId) : null
 //         if (result) {
-//             customerTotalPrice.find(q => q.id === order.customerId).totalPrice = totalPrice + +totalOrderPrice
+//             customerTotalPrice.find(q => q.id === order.customerId).totalPrice += +totalOrderPrice
 //         } else {
 //             customerTotalPrice.push(obj)
 //         }
@@ -29596,8 +29596,8 @@ let totalPrice = 0;
 
 //1997 yılında verilen siparişler
 
-const filteredOrders = orders.filter(q => new Date(q.orderDate).getFullYear() === 1997 && new Date(q.orderDate).getMonth() === 0);
-console.log(filteredOrders);
+// const filteredOrders = orders.filter(q => new Date(q.orderDate).getFullYear() === 1997 && new Date(q.orderDate).getMonth() === 0);
+// console.log(filteredOrders);
 
 // orders.forEach(order => {
 //     if (new Date(order.orderDate).getFullYear() === 1997) {
