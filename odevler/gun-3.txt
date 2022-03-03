@@ -3,6 +3,9 @@
 *UnitsInStock 5 den küçük olan satırı kırmızı yaz.
 
 2)https://northwind.vercel.app/api/orders
+*ul eklenecek (htmle direkt yazılabilir ya da js ile de create edilebilir) ve li ler ile customerId ler listelenecek
+*bu listede shipVia 1 ise yazı rengi kırmızı 2 ise yazı bold 3 ise herhangi bir style olmadan yazdırılacak
+
 *CustomerId,shipName, city, order year (orderdate den yıl alınacak) ve order'a ait TotalPrice (derste hesapladığımız gibi detaydaki ürünlerin quantity*price şeklinde toplamları) şeklinde 5 kolonlu bir tablo oluşuturulacak.
 
 innerHtml ve createElementden istediğinizi kullanabilirsiniz
