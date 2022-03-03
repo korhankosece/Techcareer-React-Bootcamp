@@ -1,0 +1,8 @@
+1) https://northwind.vercel.app/api/products
+*ID, Name, Price ve KDVPrice olarak 4 kolonu yazdır.(kdv normal price'ı 1.18 ile çarparak hesaplanacak) Price işlemlerini toFixed metodu ile görünümünü düzeltilecek. ( 40.00 gibi noktadan sonra iki basamak)
+*UnitsInStock 5 den küçük olan satırı kırmızı yaz.
+
+2)https://northwind.vercel.app/api/orders
+*CustomerId,shipName, city, order year (orderdate den yıl alınacak) ve order'a ait TotalPrice (derste hesapladığımız gibi detaydaki ürünlerin quantity*price şeklinde toplamları) şeklinde 5 kolonlu bir tablo oluşuturulacak.
+
+innerHtml ve createElementden istediğinizi kullanabilirsiniz

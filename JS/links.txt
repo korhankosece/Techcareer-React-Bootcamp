@@ -22,3 +22,6 @@ https://momentjs.com/
 
 --northwind link
 https://northwind.vercel.app/
+
+--Önemli 30 css selector
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
