@@ -6,6 +6,7 @@
 *ul eklenecek (htmle direkt yazılabilir ya da js ile de create edilebilir) ve li ler ile customerId ler listelenecek
 *bu listede shipVia 1 ise yazı rengi kırmızı 2 ise yazı bold 3 ise herhangi bir style olmadan yazdırılacak
 
-*CustomerId,shipName, city, order year (orderdate den yıl alınacak) ve order'a ait TotalPrice (derste hesapladığımız gibi detaydaki ürünlerin quantity*price şeklinde toplamları) şeklinde 5 kolonlu bir tablo oluşuturulacak.
+*CustomerId,shipName, city, orderDate (yıl-ay şeklinde yani 1997-12 gibi) ve order'a ait TotalPrice (derste hesapladığımız gibi detaydaki ürünlerin quantity*price şeklinde toplamları) şeklinde 5 kolonlu bir tablo oluşuturulacak.
 
 innerHtml ve createElementden istediğinizi kullanabilirsiniz
+date de string method kullanabilrsiniz Date method veya moment js formatlarından da yararlanabilirsiniz.
