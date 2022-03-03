@@ -1,0 +1,17 @@
+1)moment.js kütüphanesi incelenip, metodları bir kaç örnek yapılacak (format, get('year') vb....)
+-moment.js kurulumunu html'de çalışacağınız için cdn scripti ekleyerek yapabilirsiniz.
+örnek çalışan moment cdn linki =>  <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script> 
+ekledikten sonra    moment()    metodu üzerinden dökümandaki gibi çalışabilirsiniz.
+
+
+2) js Date objesi incelenicek , metodları bir kaç örnek yapılacak
+-https://www.w3schools.com/js/js_dates.asp
+-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+3) js Math objesi incelenicek, metodları bir kaç örnek yapılacak
+-https://www.w3schools.com/js/js_math.asp
+
+4) https://northwind.vercel.app/api/orders
+*Mayıs 1998 yılında verilen siparişleri listeleyin.
+*Mayıs 1998 yılında verilen siparişlerin toplam tutarı nedir?
+*Bugüne kadar en düşük siparişi veren müşteri (bad customer)?
