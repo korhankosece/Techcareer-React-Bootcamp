@@ -415,20 +415,50 @@ const suppliers = [
     }
 ]
 
-// telefonları temizleyerek yazdır
-const numbers = suppliers.map(supplier => {
-    let number = supplier.address.phone.toString()
-    return number.replace('(', '').replace(')', '').replaceAll(' ', '').replace('-', '').replace('.', '')
+// const ulElement = document.createElement('ul')
+// ulElement.id = 'liste'
+// const bodyElement = document.querySelector('body')
+// bodyElement.appendChild(ulElement)
 
-    //+ keyi ile stringi number'a çevirebiliriz
-    // number = +number
-})
+// suppliers.forEach((supplier) => {
+//     const companyName = supplier.companyName.toUpperCase();
 
-//Countrysi USA olan suplierların contact namelerini büyk harfle yazdır
+//     // 1.seçenek
+//     //Text manipülasyonu için kullanılır
+//     // ulElement.innerText += `<li>${companyName}</li>`
+//     // ulElement.textContent += `<li>${companyName}</li>`
 
-const contacts = suppliers.map(supplier => supplier?.contactName.toUpperCase())
+//     //Html element manipülasyonu için kullanılır
+//     // ulElement.innerHTML += `<li>${companyName}</li>`
 
-// suppliers.map(supplier => supplier?.address?.country && supplier?.address?.country === 'USA' ? console.log(supplier?.contactName.toUpperCase()) : '')
+//     // 2.seçenek
+//     const liElement = document.createElement('li')
+//     liElement.innerText = companyName
+//     ulElement.appendChild(liElement)
+// })
 
-console.log(contacts);
 
+const tableElement = document.querySelector('table')
+
+const header = `<tr>
+<th>Company</th>
+<th>Contact</th>
+<th>Country</th>
+</tr>`
+
+console.log(tableElement);
+tableElement.innerHTML = header;
+
+suppliers.forEach(supplier => {
+    if (supplier.address.region.toLowerCase().trim() === 'null') {
+        tableElement.innerHTML += `<tr><td>${supplier.companyName}</td>
+        <td>${supplier.contactName}</td>
+        <td style="color:red;">${supplier.address?.city}</td></tr>`
+    } else {
+        tableElement.innerHTML += `<tr><td>${supplier.companyName}</td>
+        <td>${supplier.contactName}</td>
+        <td>${supplier.address?.city}</td></tr>`
+    }
+});
+
+// console.log(ulElement);

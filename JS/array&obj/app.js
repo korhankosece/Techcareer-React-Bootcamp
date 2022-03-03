@@ -76,4 +76,19 @@ let user = {
     }
 };
 
+//Spread operator
+// let arr = [1, 2, 6]
+
+// let arr2 = ['Red Hot Chili', 'Guns n roses']
+
+// const elem = [2, ...arr]
+// console.log(elem);
+
+// const user = {
+//     name: 'Korhan',
+//     surname: 'Kosece'
+// }
+
+// console.log({ ...user, isValid: true, user: user, array: arr });
+
 // console.log(user.adress.city);
