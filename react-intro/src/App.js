@@ -1,9 +1,9 @@
-import GourmetTemplate from "./templateSample/GourmetTemplate";
+import StateSample6 from "./stateSample/StateSample6";
 
 function App() {
-  return (
-    <GourmetTemplate />
-  );
+    return (
+        <StateSample6 />
+    );
 }
 
 export default App;

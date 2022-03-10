@@ -4,9 +4,10 @@ import Navbar from "./Navbar"
 import PageContent from "./PageContent"
 
 const GourmetTemplate = () => {
+    const iconText = 'Alinin Mutfağı'
     return (
         <>
-            <Navbar />
+            <Navbar iconText={iconText} />
             <Header />
             <PageContent />
             <Footer />
