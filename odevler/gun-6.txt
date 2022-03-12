@@ -1,0 +1,14 @@
+--Virtual dom nedir?
+--State nedir, useState hookunu araştırınız.
+--JavaScript veri tipleri nedir ve farkları nelerdir? (Primitive & Referencal farkı)
+
+--https://northwind.vercel.app/api/suppliers
+bu apiden datalar static olarak kaydedilecek ve export edilecek
+ekranda bir tablo olarak listelenecek (kolonlar => id,companyName, contactName ve City)
+
+--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3
+table örneğine buradan bakılabilir. bu örnekteki css external olarak ayrı bir css dosyasına eklenip componentte çağırılacak
+
+add ve clear adında iki buton oluşturulacak
+clear ile tümü satırlar temizlenecek ( temizlendiğinde ekranda tablo olmayacak sadece data bulunmamaktadır yazacak)
+add ile tüm kolonları dolu olacak şekilde data eklenecek (datayı statik olarak functiona yazabilirsiniz fakat bir dahaki clickte aynı id ye sahip data ekranda varsa ekleme yapmayacak!)
