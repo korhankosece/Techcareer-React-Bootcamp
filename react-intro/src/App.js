@@ -1,8 +1,8 @@
-import StateSample6 from "./stateSample/StateSample6";
+import TodoApp from "./stateSample/TodoApp";
 
 function App() {
     return (
-        <StateSample6 />
+        <TodoApp />
     );
 }
 
