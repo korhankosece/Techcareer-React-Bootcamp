@@ -1,0 +1,6 @@
+--https://northwind.vercel.app/api/customers
+**bu apiden List Add ve delete işlemleri yapılacak şekilde bir tablo yapılacak
+(kolonlar id, companyName, contactName,city,country)
+-ekleme işleminde data tüm kolonları doldurmalı (companyName, contactName,city,country)
+-ekleme ve silme işleminden sonra refresh olmadan liste yenilenebilecek
+
