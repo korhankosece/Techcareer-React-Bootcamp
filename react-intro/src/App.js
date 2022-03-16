@@ -1,8 +1,8 @@
-import TodoApp from "./stateSample/TodoApp";
+import AddCategory from "./apiOperations/AddCategory";
 
 function App() {
     return (
-        <TodoApp />
+        <AddCategory />
     );
 }
 
