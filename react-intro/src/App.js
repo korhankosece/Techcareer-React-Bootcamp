@@ -1,8 +1,8 @@
-import AddCategory from "./apiOperations/AddCategory";
+import ProductPage from "./contextSample/ProductPage";
 
 function App() {
     return (
-        <AddCategory />
+        <ProductPage />
     );
 }
 
