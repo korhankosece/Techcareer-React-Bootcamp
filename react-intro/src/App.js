@@ -1,8 +1,14 @@
-import ProductPage from "./contextSample/ProductPage";
+import { CartProvider } from "./contexts/CartContext";
+import { ToDoProvider } from "./contexts/TodoContext";
+import ToDoMain from "./contextSample/ToDoMain";
 
 function App() {
     return (
-        <ProductPage />
+        <ToDoProvider>
+            <CartProvider>
+                <ToDoMain />
+            </CartProvider>
+        </ToDoProvider>
     );
 }
 

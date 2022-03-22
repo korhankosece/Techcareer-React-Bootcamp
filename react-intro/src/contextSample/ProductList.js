@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { baseService } from "../network/services/baseService";
+import CartContext from "../contexts/CartContext"
+import CartList from "./CartList";
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
-
-    const [cart, setCart] = useState([])
+    const { cart, setCart } = useContext(CartContext)
 
     useEffect(() => {
         getProducts();
@@ -38,11 +39,15 @@ const ProductList = () => {
         }
     }
 
-    console.log(cart);
+    const removeItem = (id) => {
+        // console.log(id);
+        setCart(prev => prev.filter(q => q.id !== id))
+    }
 
     return (
         <>
             {/* <h1>Cart Count: {cart.length}</h1> */}
+            <CartList removeItem={removeItem} />
             <table>
                 <tr>
                     <th>ID</th>
