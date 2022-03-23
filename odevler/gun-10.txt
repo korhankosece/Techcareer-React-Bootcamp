@@ -1,0 +1,5 @@
+--https://northwind.vercel.app/api/orders
+orders api antdesign table ile listelenecek (id,customerId => sort yapılabilecek,orderDate=> formatlanacak, freight => sort yapılabilecek, country)
+form kullanılarak tüm kolonlar eklenecek şekilde Post işlemi gerçekleştirilecek.(countryler selectten seçilerek yapılacak, country listesi statik oluşturabilirsiniz.)
+**Formda isActive adında bir checkbox bulunacak, eğerki eklerken işaretlenirse listede eklenen data görünecek, işaretlenmeden ekleme yapılırsa oluşturulan listede görülmeyecek.
+**listede silme işlemi için buton veya icon kullanılacak (icon için antd dökümanına bakabilirsiniz.) ve modal ile silme onay modalı yapılacak.
