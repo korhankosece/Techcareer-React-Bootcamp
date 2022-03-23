@@ -1,12 +1,13 @@
 import { CartProvider } from "./contexts/CartContext";
 import { ToDoProvider } from "./contexts/TodoContext";
-import ToDoMain from "./contextSample/ToDoMain";
+import 'antd/dist/antd.css';
+import CustomerForm from "./antDesignSample/CustomerForm";
 
 function App() {
     return (
         <ToDoProvider>
             <CartProvider>
-                <ToDoMain />
+                <CustomerForm />
             </CartProvider>
         </ToDoProvider>
     );
