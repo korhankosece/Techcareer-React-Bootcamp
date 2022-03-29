@@ -8,6 +8,8 @@ import NotFoundPage from './routingSample/NotFoundPage';
 import SupplierDetailPage from './routingSample/SupplierDetailPage';
 import SupplierAddPage from './routingSample/SupplierAddPage';
 import { CartProvider } from './contexts/CartContext';
+import RefSample from './refSample/RefSample';
+import Page from './memoSample/Page';
 
 function App() {
     const { Header, Content, Footer } = Layout;
@@ -20,6 +22,8 @@ function App() {
                         <Menu.Item key="1"><Link to={'/'}>Home</Link></Menu.Item>
                         <Menu.Item key="2"><Link to='/about'>About</Link></Menu.Item>
                         <Menu.Item key="3"><Link to='/suppliers'>Suppliers</Link></Menu.Item>
+                        <Menu.Item key="4"><Link to='/refSample'>Ref Sample</Link></Menu.Item>
+                        <Menu.Item key="5"><Link to='/memoSample'>Memo Sample</Link></Menu.Item>
                     </Menu>
                 </Header>
                 <Content style={{ padding: '0 50px' }}>
@@ -30,6 +34,8 @@ function App() {
                             <Route path='/suppliers' element={<SupplierPage />} />
                             <Route path='/suppliers/:id' element={<SupplierDetailPage />} />
                             <Route path='/suppliers/add' element={<SupplierAddPage />} />
+                            <Route path='/refSample' element={<RefSample />} />
+                            <Route path='/memoSample' element={<Page />} />
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
                     </div>

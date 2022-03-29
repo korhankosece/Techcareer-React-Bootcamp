@@ -20,7 +20,24 @@ const AddCategory = () => {
         // const data = { name, description }
 
         // const data = { name: category.name, description: category.description }
-        const data = category;
+        const data = {
+            customerId: 'KORHANKOSECE',
+            orderDate: Date.now(),
+            details: [
+                {
+                    productId: 1,
+                    unitPrice: 10,
+                    quantity: 2
+                },
+                {
+                    productId: 2,
+                    unitPrice: 50,
+                    quantity: 1
+                }
+            ]
+        }
+
+        // const data = category;
         const config = {
             method: 'POST',
             headers: {
