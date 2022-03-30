@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <p>
+            Clicked: <span id="value">0</span> times
+            Clicked: <span id="value2">0</span> times
+            <button id="increment">+</button>
+            <button id="decrement">-</button>
+        </p>
+    </div>
+
+    <script>
+        //reducer
+        function counter(state = 0, action) {
+            const { type } = action;
+            // const type = action.type;
+            // if (type === 'INCREMENT') {
+            //     return state + 1
+            // } else if (type === 'DECREMENT') {
+            //     return state - 1
+            // } else {
+            //     return state
+            // }
+            switch (type) {
+                case 'INCREMENT':
+                    return state + 1
+                case 'DECREMENT':
+                    return state - 1
+                default:
+                    break;
+            }
+        }
+
+        //store
+        const store = Redux.createStore(counter)
+
+        const value = document.querySelector('#value');
+
+        function render() {
+            value.innerHTML = store.getState().toString()
+        }
+
+        function render2() {
+            value2.innerHTML = store.getState().toString()
+        }
+
+        // store state connection to view
+        store.subscribe(render)
+        store.subscribe(render2)
+
+        //action
+        document.querySelector('#increment').addEventListener('click', function () {
+            //dispatcher
+            store.dispatch({ type: 'INCREMENT' })
+        })
+
+        document.querySelector('#decrement').addEventListener('click', function () {
+            const action = { type: 'DECREMENT' }
+            store.dispatch(action)
+        })
+
+    </script>
+</body>
+
+</html>

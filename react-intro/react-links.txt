@@ -1,0 +1,21 @@
+//react site
+https://tr.reactjs.org/
+
+//react hooks
+https://www.w3schools.com/react/react_hooks.asp
+
+//redux
+https://redux.js.org/
+https://react-redux.js.org/
+
+//css linkler
+https://www.w3schools.com/css/default.asp
+https://css-tricks.com/
+https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=tr
+
+//css flex ve grid game
+https://flexboxfroggy.com/
+https://cssgridgarden.com/
+
+//adem ilter sıfırdan css eğitim
+https://www.youtube.com/playlist?list=PLadt0EaV4m3BX9JaZbKS9B8076bruv93Y
